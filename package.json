@@ -47,7 +47,7 @@
   },
   "scripts": {
     "coveralls": "nyc gulp && nyc report --reporter=text-lcov | coveralls",
-    "test": "nyc gulp"
+    "test": "nyc gulp test"
   },
   "license": "MIT",
   "bugs": {
