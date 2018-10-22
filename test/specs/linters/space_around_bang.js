@@ -231,7 +231,7 @@ describe('lesshint', function () {
             it('should not allow missing space after bang in mixins', function () {
                 const source = '.mixin() !important;';
                 const expected = [{
-                    column: 10,
+                    column: 9,
                     line: 1,
                     message: 'Exclamation marks should be preceded and followed by one space.'
                 }];
@@ -340,7 +340,7 @@ describe('lesshint', function () {
             it('should not allow one space before bang in mixins', function () {
                 const source = '.mixin() !important;';
                 const expected = [{
-                    column: 10,
+                    column: 9,
                     line: 1,
                     message: 'Exclamation marks should not be preceded nor followed by any space.'
                 }];
