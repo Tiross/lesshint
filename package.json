@@ -46,7 +46,7 @@
     "lesshint": "bin/lesshint"
   },
   "scripts": {
-    "test": "nyc gulp"
+    "test": "nyc gulp test"
   },
   "license": "MIT",
   "bugs": {
