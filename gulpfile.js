@@ -23,6 +23,10 @@ gulp.task('test', ['lint'], () => {
     ;
 });
 
+gulp.task('watch', ['test'], () => {
+    gulp.watch(['./lib/**/*.js', './test/**/*.js'], ['test']);
+});
+
 gulp.task('coveralls', ['test'], () => {
     const coveralls = require('gulp-coveralls');
 
@@ -31,4 +35,4 @@ gulp.task('coveralls', ['test'], () => {
     ;
 });
 
-gulp.task('default', ['test']);
+gulp.task('default', ['watch']);
