@@ -18,11 +18,4 @@ gulp.task('test', ['lint'], () => {
         .pipe(mocha());
 });
 
-gulp.task('coveralls', ['test'], () => {
-    const coveralls = require('gulp-coveralls');
-
-    return gulp.src('./coverage/lcov.info')
-        .pipe(coveralls());
-});
-
 gulp.task('default', ['test']);

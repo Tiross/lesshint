@@ -33,9 +33,9 @@
   },
   "devDependencies": {
     "chai": "^4.0.1",
+    "coveralls": "^3.0.2",
     "eslint-config-lesshint": "^1.0.3",
     "gulp": "^3.9.0",
-    "gulp-coveralls": "^0.1.4",
     "gulp-eslint": "^5.0.0",
     "gulp-mocha": "^6.0.0",
     "nyc": "^12.0.1",
@@ -46,6 +46,7 @@
     "lesshint": "bin/lesshint"
   },
   "scripts": {
+    "coveralls": "nyc gulp && nyc report --reporter=text-lcov | coveralls",
     "test": "nyc gulp"
   },
   "license": "MIT",
