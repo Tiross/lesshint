@@ -13,14 +13,9 @@ cache:
     - node_modules/
 
 before_script:
-  - node --version
-  - npm --version
   - npm install -g gulp
 
 script:
-  - npm test
-
-after_script:
   - npm run coveralls
 
 matrix:
