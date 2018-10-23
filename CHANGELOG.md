@@ -1,4 +1,8 @@
 # Changelog
+
+## Unreleased
+* Updated `postcss-less` to `3.x`. ([eeeb4ea](https://github.com/lesshint/lesshint/commit/eeeb4eac8d8aaace93cb73d78052a3ff8fff5772))
+
 ## 5.1.0 (2018-05-06)
 * More configuration file formats are now supported. [See docs](https://github.com/lesshint/lesshint/blob/master/docs/user-guide/configuration.md) for more info. ([32f6771](https://github.com/lesshint/lesshint/commit/32f6771b28509e50c596a1feb5c20ea74d30d9a4))
 * Replaced `lodash.sortBy()` with `lodash.orderBy()`. ([5c15a59](https://github.com/lesshint/lesshint/commit/5c15a5935bd2d789ac28b2167ce1f839ed9ec997))
